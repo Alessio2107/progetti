@@ -1,0 +1,25 @@
+<h1>Modifica Film</h1>
+<form [formGroup]="filmForm" (ngSubmit)="confermaModifica()">
+  <label>
+    Nome:
+    <input type="text" formControlName="nome">
+  </label>
+  <label>
+    Anno Uscita del Film:
+    <input type="number" formControlName="annoUscitaDelFilm">
+  </label>
+  <label>
+    Durata:
+    <input type="text" formControlName="durata">
+  </label>
+  <label>
+    Genere:
+    <input type="text" formControlName="genere">
+  </label>
+  <label>
+    Regista:
+    <input type="text" formControlName="regista">
+  </label>
+  <button type="button" (click)="confermaModifica()">Conferma</button>
+  <button type="button" (click)="annullaModifica()">Annulla</button>
+</form>

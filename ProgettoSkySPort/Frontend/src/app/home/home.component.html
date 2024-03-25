@@ -1,0 +1,56 @@
+ <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef> nome </th>
+      <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="annoUscitaDelFilm">
+      <th mat-header-cell *matHeaderCellDef> anno uscita del film </th>
+      <td mat-cell *matCellDef="let element"> {{element.annoUscitaDelFilm}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="durata">
+      <th mat-header-cell *matHeaderCellDef> durata </th>
+      <td mat-cell *matCellDef="let element"> {{element.durata}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="genere">
+      <th mat-header-cell *matHeaderCellDef> genere </th>
+      <td mat-cell *matCellDef="let element"> {{element.genere}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="regista">
+        <th mat-header-cell *matHeaderCellDef> regista </th>
+        <td mat-cell *matCellDef="let element"> {{element.regista}} </td>
+      </ng-container>
+
+    <ng-container matColumnDef="elimina">
+        <th mat-header-cell *matHeaderCellDef> elimina </th>
+        <td mat-cell *matCellDef="let element">
+          <button (click)="elimina(element.id)" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <mat-icon >delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="modifica">
+        <th mat-header-cell *matHeaderCellDef> modifica </th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button aria-label="Modifica" (click)="apriDialogModifica(element)">
+            <mat-icon>edit</mat-icon> 
+          </button>
+        </td>
+      </ng-container>
+
+
+
+
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+

@@ -1,0 +1,13 @@
+.container {
+
+}
+
+.header,
+.footer {
+    margin-bottom: 20px;
+}
+
+.router-content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

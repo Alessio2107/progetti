@@ -1,0 +1,36 @@
+.container{
+
+    height: 100vh;
+    background-color: #f60000 !important;
+
+}
+
+.logo {
+    top: 0;
+    left: 0;
+    background-color: #f60000 !important;
+    
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.skyhome {
+
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.skyhome img {
+    width: 100%;
+    height: auto;
+}
