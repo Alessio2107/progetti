@@ -1,0 +1,21 @@
+<h2>Lista Utenti</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th>Età</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users" (click)="selezionaUtente(user)">
+      <td>{{ user.id }}</td>
+      <td>{{ user.nome }}</td>
+      <td>{{ user.cognome }}</td>
+      <td>{{ user.eta }}</td>
+    </tr>
+  </tbody>
+</table>
+<app-passaggio-dati [utenteInput]="utenteSelezionato" #passaggioDati *ngIf="utenteSelezionato"></app-passaggio-dati>
+

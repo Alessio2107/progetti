@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #007bff;
+}
+
+.container {
+  margin-top: 20px;
+}
