@@ -1,0 +1,14 @@
+<div class="container" style="background-color: antiquewhite;">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let user of users; let i = index;" (click)="vediDettaglio(user)">
+            <div class="card mb-4 box-shadow" style="background-color: blueviolet;">
+                <img class="card-img-top" [src]="getImage(user.img)" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title"><strong>{{user.name}}-{{user.surname}}</strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

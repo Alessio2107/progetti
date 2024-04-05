@@ -1,0 +1,67 @@
+.dettaglio {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.dettaglio img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card{
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.card h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.card p{
+    font-size: 16px;
+    color: #555;
+}
+
+.card a{
+    color: #333;
+}
+
+.card .btn{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.card .btn:hover{
+    background-color: #2980b9;
+}
+
+@media screen and (min-width: 768px) {
+    .dettaglio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dettaglio img{
+        width: 50%;
+        margin-right: 20px;
+    }
+    .card{
+        flex: 1;
+    }
+}
+

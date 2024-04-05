@@ -1,0 +1,30 @@
+.container{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer a {
+    color: #f26522;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.footer a:hover {
+    color: #f2c94c;
+}
+
+.footer a:active {
+    color: #f2994a;
+}
+
+.footer strong {
+    font-weight: 900;
+}
+
+.footer i {
+    font-style: italic;
+}
+

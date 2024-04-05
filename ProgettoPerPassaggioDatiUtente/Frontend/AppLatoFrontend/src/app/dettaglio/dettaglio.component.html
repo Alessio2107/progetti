@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-start align-items-start">
+  <a class="btn btn-primary m-3" [routerLink]="['/home']" style="text-decoration: none;">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: blue; width: auto;">
+  <div class="card" style="width: 100%;" *ngIf="userDettaglio">
+    <div class="card-body">
+      <h3 class="card-title">Dettaglio utente</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">ID: {{userDettaglio.id}}</li>
+        <li class="list-group-item">Name: {{userDettaglio.name}}</li>
+        <li class="list-group-item">Surname: {{userDettaglio.surname}}</li>
+        <li class="list-group-item">Email: {{userDettaglio.email}}</li>
+        <li class="list-group-item">Phone: {{userDettaglio.phoneNumber}}</li>
+        <li class="list-group-item">WorkPlace: {{userDettaglio.workPlace}}"></li>
+        <li class="list-group-item">Link Of WorkPlace: {{userDettaglio.linkOfWorkPlace}}"></li>
+        <li class="list-group-item">Img: <img src="{{userDettaglio.img}}"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
